@@ -1,0 +1,26 @@
+{
+  "name": "vue-bulma-chartist",
+  "version": "0.0.0",
+  "description": "Chartist component for Vue Bulma",
+  "main": "src/Chartist.vue",
+  "devDependencies": {
+    "bulma": "0.1.0",
+    "vue": "1.0.26"
+  },
+  "scripts": {},
+  "repository": "git+https://github.com/vue-bulma/chartist.git",
+  "keywords": [
+    "vue",
+    "bulma",
+    "vue-bulma",
+    "vue-bulma-component",
+    "vue-bulma-chartist",
+    "chartist",
+    "chart"
+  ],
+  "author": "Fangdun Cai <cfddream@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "chartist": "0.9.8"
+  }
+}
