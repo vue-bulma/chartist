@@ -39,10 +39,9 @@ export default {
     }
   },
 
-  ready () {
-    const $el = this.$el
+  mounted () {
     this.chart = new Chartist[this.type](
-      $el,
+      this.$el,
       this.data,
       this.options,
       this.responsiveOptions
