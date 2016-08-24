@@ -21,21 +21,15 @@ export default {
     data: {
       type: Object,
       required: true,
-      default () {
-        return {}
-      }
+      default: () => ({})
     },
     options: {
       type: Object,
-      default () {
-        return {}
-      }
+      default: () => ({})
     },
     responsiveOptions: {
       type: Array,
-      default () {
-        return []
-      }
+      default: () => ([])
     }
   },
 
