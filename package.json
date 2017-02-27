@@ -1,6 +1,6 @@
 {
   "name": "vue-bulma-chartist",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Chartist component for Vue Bulma",
   "main": "src/Chartist.vue",
   "peerDependencies": {
