@@ -14,9 +14,7 @@ export default {
       type: String,
       default: 'Line',
       required: true,
-      validator (value) {
-        return types.indexOf(value) > -1
-      }
+      validator: (value) => types.includes(value)
     },
     data: {
       type: Object,
@@ -33,6 +31,12 @@ export default {
     }
   },
 
+  data () {
+    return {
+      chart: null
+    }
+  },
+
   mounted () {
     this.chart = new Chartist[this.type](
       this.$el,
@@ -42,17 +46,9 @@ export default {
     )
   },
 
-  data () {
-    return {
-      chart: null
-    }
-  },
-
   watch: {
     data (val) {
-      this.$nextTick(() => {
-        this.chart.update()
-      })
+      this.$nextTick(() => this.chart.update())
     }
   }
 }
